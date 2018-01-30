@@ -497,34 +497,42 @@ void dash_a_box1()
 
 void dash_a_box2()
 {
-    int i;
+    int i,j=0;
+    if(top1==1)
+        j=3;
+    else if(top1==2&&ar1[0]==2)
+        j=3;
     for(i=22; i<38; i++)
     {
-        horizontal(i,14);
-        horizontal(i,17);
+        horizontal(i,14+j);
+        horizontal(i,17+j);
     }
-    vertical(22,16);
-    vertical(22,15);
-    vertical(37,15);
-    vertical(37,16);
+    vertical(22,16+j);
+    vertical(22,15+j);
+    vertical(37,15+j);
+    vertical(37,16+j);
 
-    g(30,16);
+    g(30,16+j);
     printf("2");
 }
 
 void dash_a_box3()
 {
-    int i;
+    int i,j=0;
+    if(top1==1)
+        j=6;
+    else if(top1==2)
+        j=3;
     for(i=24; i<36; i++)
     {
-        horizontal(i,11);
-        horizontal(i,14);
+        horizontal(i,11+j);
+        horizontal(i,14+j);
     }
-    vertical(24,13);
-    vertical(24,12);
-    vertical(35,12);
-    vertical(35,13);
-    g(30,13);
+    vertical(24,13+j);
+    vertical(24,12+j);
+    vertical(35,12+j);
+    vertical(35,13+j);
+    g(30,13+j);
     printf("3");
 }
 
@@ -547,33 +555,41 @@ void dash_b_box1()
 
 void dash_b_box2()
 {
-    int i;
+    int i,j=0;
+    if(top2==1)
+        j=3;
+    else if(top2==2&&ar2[0]==2)
+        j=3;
     for(i=52; i<68; i++)
     {
-        horizontal(i,14);
-        horizontal(i,17);
+        horizontal(i,14+j);
+        horizontal(i,17+j);
     }
-    vertical(52,15);
-    vertical(52,16);
-    vertical(67,15);
-    vertical(67,16);
-    g(60,16);
+    vertical(52,15+j);
+    vertical(52,16+j);
+    vertical(67,15+j);
+    vertical(67,16+j);
+    g(60,16+j);
     printf("2");
 }
 
 void dash_b_box3()
 {
-    int i;
+    int i,j=0;
+    if(top2==1)
+        j=6;
+    else if(top2==2)
+        j=3;
     for(i=54; i<66; i++)
     {
-        horizontal(i,11);
-        horizontal(i,14);
+        horizontal(i,11+j);
+        horizontal(i,14+j);
     }
-    vertical(54,12);
-    vertical(54,13);
-    vertical(65,12);
-    vertical(65,13);
-    g(60,13);
+    vertical(54,12+j);
+    vertical(54,13+j);
+    vertical(65,12+j);
+    vertical(65,13+j);
+    g(60,13+j);
     printf("3");
 }
 
@@ -595,33 +611,41 @@ void dash_c_box1()
 
 void dash_c_box2()
 {
-    int i;
+    int i,j=0;
+    if(top3==1)
+        j=3;
+    else if(top3==2&&ar3[0]==2)
+        j=3;
     for(i=82; i<98; i++)
     {
-        horizontal(i,14);
-        horizontal(i,17);
+        horizontal(i,14+j);
+        horizontal(i,17+j);
     }
-    vertical(82,15);
-    vertical(82,16);
-    vertical(97,15);
-    vertical(97,16);
-    g(90,16);
+    vertical(82,15+j);
+    vertical(82,16+j);
+    vertical(97,15+j);
+    vertical(97,16+j);
+    g(90,16+j);
     printf("2");
 }
 
 void dash_c_box3()
 {
-    int i;
+    int i,j=0;
+    if(top3==1)
+        j=6;
+    else if(top3==2)
+        j=3;
     for(i=84; i<96; i++)
     {
-        horizontal(i,11);
-        horizontal(i,14);
+        horizontal(i,11+j);
+        horizontal(i,14+j);
     }
-    vertical(84,12);
-    vertical(84,13);
-    vertical(95,12);
-    vertical(95,13);
-    g(90,13);
+    vertical(84,12+j);
+    vertical(84,13+j);
+    vertical(95,12+j);
+    vertical(95,13+j);
+    g(90,13+j);
     printf("3");
 }
 
